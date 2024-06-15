@@ -55,12 +55,11 @@ def main():
         layout="wide",
         initial_sidebar_state="expanded",
     )
-
     # load questions from database into dataframe
     questions_df = pd.read_sql_table("flashcards", "sqlite:///flashcard_ai.db")
 
     # Title section
-    st.header("SmartCards AI :brain:", divider="rainbow")
+    st.header("Sankofa SmartCards :brain:", divider="rainbow")
     st.subheader("Intelligent Flashcards for National Quiz Champions!")
 
     # Sidebar
@@ -126,7 +125,7 @@ def main():
 
             explanation = showAnswer(card)
             with st.expander("Explain with AI"):
-                st.write(explanation)
+                st.write(f":red[{explanation}]")
 
         # buttons
         col1, col2, col3, col4, col5, col6 = st.columns([2, 1, 1, 1, 1, 2])

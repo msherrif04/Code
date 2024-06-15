@@ -34,7 +34,11 @@ def get_explanation(question, answer, api_key):
 
     chain = prompt | llm | StrOutputParser()
 
-    return chain.invoke({"user_question": question, "answer": answer})
+    try:
+        response = chain.invoke({"user_question": question, "answer": answer})
+        return response
+    except:
+        return "Kindle connect to the internet to access Explain with AI feature"
 
 
 question = """

@@ -141,5 +141,7 @@ To address this issue, we need to focus on the most effective methods of learnin
 Flashcards have proven to be an excellent tool for implementing spaced repetition. They allow students to break down complex information into manageable chunks, making it easier to review and memorize key concepts. With flashcards, students can systematically revisit information, reinforcing their learning in a structured and effective manner.
 
 By leveraging the power of flashcards and spaced repetition, we can help level the playing field for all students preparing for the NSMQ. Providing equitable access to high-quality flashcard sets and incorporating spaced repetition into study routines can ensure that every student, regardless of their school's resources, has the opportunity to excel in the competition. This approach not only promotes fairness but also enhances the overall quality of education and learning outcomes for students across the board.
+
+A major downside of currently available flashcard apps are they give the answers without context which makes understand the concepts difficult. Sankofa Smartcards uses Artificial Intelligence to explain the questions and answers in real time to facilitate understanding and prevent rote memorization.
         """
     )

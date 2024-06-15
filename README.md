@@ -1,4 +1,4 @@
-# SmartCards AI 🧠
+# Sankofa SmartCards🧠
 
 ## Intelligent Flashcards for National Quiz Champions
 
@@ -16,7 +16,7 @@ Flashcards have proven to be an excellent tool for implementing spaced repetitio
 
 By leveraging the power of flashcards and spaced repetition, we can help level the playing field for all students preparing for the NSMQ. Providing equitable access to high-quality flashcard sets and incorporating spaced repetition into study routines can ensure that every student, regardless of their school's resources, has the opportunity to excel in the competition. This approach not only promotes fairness but also enhances the overall quality of education and learning outcomes for students across the board.
 
-A major download of currently available flashcard apps are they give the answers without context which makes understand the concepts difficult. Smartcards AI uses Artificial Intelligence to explain the questions and answers in real time to facilitate understanding and prevent rote memorization.
+A major downside of currently available flashcard apps are they give the answers without context which makes understand the concepts difficult. Sankofa Smartcards uses Artificial Intelligence to explain the questions and answers in real time to facilitate understanding and prevent rote memorization.
 
 ## Getting Started
 
