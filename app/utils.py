@@ -5,6 +5,15 @@ from flashcards import flashcard
 from fsrs import *
 from state_management import set_state
 
+import os
+from langchain_groq import ChatGroq
+
+# from dotenv import load_dotenv, find_dotenv
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+
+from chatexplain import get_explanation, api_key
+
 flaschardParams = [
     "Has Preamble",
     "Preamble Text",
@@ -19,6 +28,11 @@ flaschardParams = [
     "lapses",
     "state",
 ]
+
+# setting up environment variables
+# load_dotenv(".env")
+# GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+# model = ChatGroq(model="llama3-8b-8192", api_key=GROQ_API_KEY)
 
 
 def GetData():
@@ -98,6 +112,12 @@ def showAnswer(card):
     if showAnswer:
         st.write(card.answer)
         # set_state(2)
+    explanation = get_explanation(
+        card.question,
+        card.answer,
+        api_key,
+    )
+    return explanation
 
 
 def review_card(card, scheduler):

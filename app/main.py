@@ -9,10 +9,24 @@ from streamlit_extras.let_it_rain import rain
 from database import *
 from utils import *
 from state_management import set_state, setIndex
+from chatexplain import get_explanation
 
 from flashcards import flashcard
 from fsrs import *
 from datetime import datetime, timedelta, UTC
+
+import os
+from langchain_groq import ChatGroq
+
+from dotenv import load_dotenv
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+
+# setting up environment variables
+# load_dotenv(".env")
+# GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
+# model = ChatGroq(model="llama3-8b-8192", api_key=GROQ_API_KEY)
 
 
 def getTimeDelta(datetime):
@@ -94,7 +108,7 @@ def main():
             st.session_state.index += 1
             st.session_state.cardsLeft -= 1
 
-        with st.container(height=400):
+        with st.container(height=600):
             # get card and rating options
             card = getCard(questionsToRevise, indices, st.session_state.index)
 
@@ -109,7 +123,10 @@ def main():
 
             # show card and answer
             showCard(card)
-            showAnswer(card)
+
+            explanation = showAnswer(card)
+            with st.expander("Explain with AI"):
+                st.write(explanation)
 
         # buttons
         col1, col2, col3, col4, col5, col6 = st.columns([2, 1, 1, 1, 1, 2])

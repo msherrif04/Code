@@ -16,6 +16,8 @@ Flashcards have proven to be an excellent tool for implementing spaced repetitio
 
 By leveraging the power of flashcards and spaced repetition, we can help level the playing field for all students preparing for the NSMQ. Providing equitable access to high-quality flashcard sets and incorporating spaced repetition into study routines can ensure that every student, regardless of their school's resources, has the opportunity to excel in the competition. This approach not only promotes fairness but also enhances the overall quality of education and learning outcomes for students across the board.
 
+A major download of currently available flashcard apps are they give the answers without context which makes understand the concepts difficult. Smartcards AI uses Artificial Intelligence to explain the questions and answers in real time to facilitate understanding and prevent rote memorization.
+
 ## Getting Started
 
 ### Pre-requisits
@@ -102,8 +104,11 @@ To ensure a clean and isolated environment for your Python projects, it is recom
 
 1. Select how easy or difficult the answer to the specific question was to recall
 2. Click next card to proceed to the next question
+3. Use AI to explain answers you dont understand to aid your understanding and prevent memorization
 
 ![Learning Page](assets/learning_page.png)
+
+![Explain with AI](assets/explain_ai.png)
 
 ## Spaced Repetition for Flashcards
 
